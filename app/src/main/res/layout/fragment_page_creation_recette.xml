@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:layout_editor_absoluteX="-17dp"
+    tools:layout_editor_absoluteY="0dp"
+    tools:context="ptitgourmand.présentation.créationRecette.VueCréationRecette">
+
+    <EditText
+        android:id="@+id/PremierIngrédientRecetteForm"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:hint="@string/Premier_ingrédient_de_la_recette"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/duréeRecetteForm" />
+
+    <EditText
+        android:id="@+id/duréeRecetteForm"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        android:hint="@string/Durée_de_la_recette"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nomRecetteForm" />
+
+    <Button
+        android:id="@+id/Créer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="184dp"
+        android:enabled="false"
+        android:text="@string/Créer"
+        app:layout_constraintEnd_toStartOf="@+id/Annuler"
+        app:layout_constraintHorizontal_bias="0.684"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/PremièreÉtapeRecetteForm" />
+
+    <Button
+        android:id="@+id/Annuler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="104dp"
+        android:text="@string/Annuler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PremièreÉtapeRecetteForm" />
+
+    <EditText
+        android:id="@+id/nomRecetteForm"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:hint="@string/Nom_de_la_recette"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/PremièreÉtapeRecetteForm"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:hint="@string/Première_étape_de_la_recette"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/PremierIngrédientRecetteForm" />
+
+    <ImageView
+        android:id="@+id/vueImageView"
+        android:layout_width="204dp"
+        android:layout_height="143dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="17dp"
+        android:src="@drawable/defaultrecette"
+        app:layout_constraintBottom_toTopOf="@+id/Créer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PremièreÉtapeRecetteForm" />
+
+    <Button
+        android:id="@+id/btnGallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="76dp"
+        android:text="Gallerie"
+        app:layout_constraintBottom_toTopOf="@+id/Annuler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/vueImageView"
+        app:layout_constraintTop_toBottomOf="@+id/PremièreÉtapeRecetteForm" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

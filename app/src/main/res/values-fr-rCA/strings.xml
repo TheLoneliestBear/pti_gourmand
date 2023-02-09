@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="Ajouter" >Ajouter</string>
+    <string name="Mes_recettes">Récent</string>
+    <string name="Premier_ingrédient_de_la_recette">Premier ingrédients de la recette</string>
+    <string name="Durée_de_la_recette">Durée de la recette</string>
+    <string name="Créer">Créer</string>
+    <string name="Annuler">Annuler</string>
+    <string name="Nom_de_la_recette">Nom de la recette</string>
+    <string name="Première_étape_de_la_recette">Première étape de la recette</string>
+    <string name="Liste_ingrédient">Liste d\'ingrédients : </string>
+    <string name="Durée">Durée : </string>
+    <string name="Portion">Portion : </string>
+    <string name="Étapes">Étapes</string>
+
+    <string name="change_photo">Changer photo</string>
+    <string name="pick_image">Choisir image</string>
+    <string name="unable_to_open_image">Impossible d\'ouvrir l\'image</string>
+
+    <string name="MotDePasse">Mot de passe</string>
+    <string name="courriel">Courriel</string>
+    <string name="Prenom">Prénom</string>
+    <string name="Nom">Nom</string>
+    <string name="NouveauCompte">Nouveau utilisateur?</string>
+    <string name="connexion">Connexion</string>
+    <string name="titre_inscription">Création d\'un compte</string>
+
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/page_connexion">
+
+    <fragment
+        android:id="@+id/pageDecouverte"
+        android:name="ptitgourmand.présentation.découverte.VueDécouverte"
+        android:label="fragment_page_decouverte"
+        tools:layout="@layout/fragment_page_decouverte">
+        <action
+            android:id="@+id/action_découverte_to_descriptionUneRecette"
+            app:destination="@id/layoutVisualiserRecette" />
+        <action
+            android:id="@+id/action_pageDecouverte_to_vueCréationRecette"
+            app:destination="@id/vueCréationRecette" />
+        <argument android:name="mainAdapter" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/layoutVisualiserRecette"
+        android:name="ptitgourmand.présentation.visualiserRecette.VueVisualiserRecette"
+        android:label="fragment_visualiser_recette"
+        tools:layout="@layout/fragment_visualiser_recette" >
+        <action
+            android:id="@+id/action_layoutVisualiserRecette_to_vueRécent"
+            app:destination="@id/vueRécent" />
+    </fragment>
+
+    <action
+        android:id="@+id/action_global_pageDecouverte"
+        app:destination="@id/pageDecouverte" />
+    <fragment
+        android:id="@+id/vueRécent"
+        android:name="ptitgourmand.présentation."
+        android:label="fragment_page_recent"
+        tools:layout="@layout/fragment_page_recent" >
+        <action
+            android:id="@+id/action_vueRécent_to_layoutVisualiserRecette"
+            app:destination="@id/layoutVisualiserRecette" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/vueCréationRecette"
+        android:name="ptitgourmand.présentation.créationRecette.VueCréationRecette"
+        android:label="fragment_page_creation_recette"
+        tools:layout="@layout/fragment_page_creation_recette" >
+        <action
+            android:id="@+id/action_vueCréationRecette_to_pageDecouverte"
+            app:destination="@id/pageDecouverte" />
+    </fragment>
+    <fragment
+        android:id="@+id/pageInscription"
+        android:name="ptitgourmand.présentation.créationUtilisateur.VueCréationUtilisateur"
+        android:label="fragment_nouveau_utilisateur"
+        tools:layout="@layout/fragment_nouveau_utilisateur" >
+        <action
+            android:id="@+id/action_vueInscription_to_connexion"
+            app:destination="@id/page_connexion" />
+    </fragment>
+    <fragment
+        android:id="@+id/page_connexion"
+        android:name="ptitgourmand.présentation.connexion.VueConnexion"
+        android:label="fragment_connexion"
+        tools:layout="@layout/fragment_connexion" >
+        <action
+            android:id="@+id/action_connexion_to_découverte"
+            app:destination="@+id/pageDecouverte" />
+        <action
+            android:id="@+id/action_connexion_to_inscription"
+            app:destination="@+id/pageInscription" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_vueRécent"
+        app:destination="@id/vueRécent" />
+
+</navigation>

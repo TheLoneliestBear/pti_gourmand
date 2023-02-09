@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:clickable="true">
+
+    <ImageView
+        android:id="@+id/imageRecetteView"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        tools:src="@drawable/defaultrecette">
+
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/nom_recette"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imageRecetteView"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="20dp"></TextView>
+
+    <TextView
+        android:id="@+id/nom_utilisateur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nom_recette"
+        android:layout_toEndOf="@id/imageRecetteView"
+        android:text="Utilisateur"
+        android:textColor="@color/black"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/imageRecetteView"
+        android:layout_marginTop="10dp"
+        android:background="#615D5D">
+
+    </LinearLayout>
+
+</RelativeLayout>
